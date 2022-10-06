@@ -133,3 +133,44 @@ h3 {
 .pricing-column {
     padding: 3% 2%
 }
+
+
+/* Call to action */
+
+#cta {
+    background-color: #ff4c68;
+    padding: 7% 15%;
+    color: #fff;
+    text-align: center;
+}
+
+.ctaText {
+    font-family: 'Montserrat-Bold';
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* Footer */
+
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.social {
+    margin: 5px;
+}
+
+/* changing behavior on tablets and mobiles */
+@media(max-width: 1028px){
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    #title {
+        text-align: center;
+    }
+}
