@@ -1,23 +1,30 @@
-h1 {
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+}
+
+body{
+    text-align: center;
+}
+
+
+/* Headings */
+
+.bigHeading {
     font-family: 'Montserrat-Black';
     font-size: 3rem;
     line-height: 1.5;
 }
 
-h2 {
+.section-heading {
     font-family: 'Montserrat-Bold';
     font-size: 3rem;
     line-height: 1.5;
 }
 
-body{
-    font-family: 'Montserrat';
+.feature-heading {
+    font-family: 'Montserrat-Bold';
+    font-size: 1.5rem;
 }
-
-h3 {
-    font-family: "Montserrat-Bold";
-}
-
 
 .container-fluid{
     padding: 3% 15% 7%;
@@ -54,6 +61,10 @@ h3 {
 
 /* Title Image */
 
+#title {
+    text-align: left;
+}
+
 .title-image {
     width: 50%;
     transform: rotate(25deg);  /* changes the roation of the viewport of the class*/
@@ -66,13 +77,11 @@ h3 {
 
 #features {
     padding: 7% 15%;
-    background-color: #ffffff;
     position: relative;
-    z-index: 1; /*bringing featured on top of title-image*/
+    z-index: 1; /* bringing featured on top of title-image */
 }
 
 .feature-box {
-    text-align: center;
     padding: 5%
 }
 
@@ -88,16 +97,14 @@ h3 {
 /* Title */
 
 #title {
-    background-color: #ff4c68;
-    color: #ffffff
+    text-align: left;
 }
 
 /* Testimonials */
 
 #testimonials {
     text-align: center;
-    background-color: #ef8172;
-    color: #ffffff
+    background-color: #ef8172;   /*id has a higher precedence, so it will override the .color class for background color*/
 }
 
 .testimonial-image {
@@ -127,7 +134,12 @@ h3 {
 
 #pricing {
     padding: 100px;
-    text-align: center
+}
+
+.price-heading {
+    font-family: 'Montserrat-Bold';
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-column {
@@ -138,27 +150,30 @@ h3 {
 /* Call to action */
 
 #cta {
-    background-color: #ff4c68;
     padding: 7% 15%;
-    color: #fff;
-    text-align: center;
-}
-
-.ctaText {
-    font-family: 'Montserrat-Bold';
-    font-size: 3.5rem;
-    line-height: 1.5;
 }
 
 /* Footer */
 
 #footer {
-    padding: 7% 15%;
-    text-align: center;
+    padding: 5% 5%;
 }
 
 .social {
     margin: 5px;
+}
+
+
+/* Sections */
+
+.colored {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: black;
 }
 
 /* changing behavior on tablets and mobiles */
